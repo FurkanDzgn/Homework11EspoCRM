@@ -1,0 +1,571 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-22T02:50:33.137Z",
+        "line": 12,
+        "name": "Second Test Case",
+        "description": "",
+        "id": "add-new-user;second-test-case;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8419389000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user goes to the WebSite",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 12963400,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3072716400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user open the Accounts",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_open_the_Accounts()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 935390500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks the Create Account button",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_clicks_the_Create_Account_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4039197400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user enter \"Davids\", \"www.davud.com\", \"davud@gmail.com\", \"2226667788\", \"Mount\", \"Prospect\", \"IL\",\"66678\", \"Chicago\", \"Customer\", \"Advertising\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Davids\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"www.davud.com\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"davud@gmail.com\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"2226667788\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"Mount\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"Prospect\"",
+                  "offset": 84
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"66678\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"Chicago\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"Customer\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"Advertising\"",
+                  "offset": 133
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_enter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Davids]\u003e but was:\u003c[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat StepDefinitions.com.EspoCRM.Case2.the_user_validate(Case2.java:72)\r\n\tat ✽.the user validate \"Davids\", \"www.davud.com\", \"davud@gmail.com\", \"2226667788\"(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:8)\r\n",
+              "duration": 1049112700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "the user validate \"Davids\", \"www.davud.com\", \"davud@gmail.com\", \"2226667788\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Davids\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"www.davud.com\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"davud@gmail.com\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"2226667788\"",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 407989200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-22T02:50:51.187Z",
+        "line": 13,
+        "name": "Second Test Case",
+        "description": "",
+        "id": "add-new-user;second-test-case;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }\n  (Session info: chrome\u003d83.0.4103.106): {Alert text : \nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSI\u0027, ip: \u002710.50.1.213\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\12242\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 8dab250a7abf73e4775736b2636f8871\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027]}\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.submit(Unknown Source)\r\n\tat StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite(EspoCrm.java:35)\r\n\tat ✽.the user goes to the WebSite(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:4)\r\n",
+              "duration": 91730100,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "the user goes to the WebSite",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 413892200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user open the Accounts",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_open_the_Accounts()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks the Create Account button",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_clicks_the_Create_Account_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1512300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter \"Zachs\", \"www.zach.com\", \"kumar@gmail.com\", \"2226664455\", \"Des\", \"Plaines\", \"IL\",\"99978\", \"New York\", \"Partner\", \"Aerospace\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zachs\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"www.zach.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"kumar@gmail.com\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"2226664455\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"Des\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"Plaines\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"IL\"",
+                  "offset": 91
+                },
+                {
+                  "val": "\"99978\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"New York\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"Partner\"",
+                  "offset": 117
+                },
+                {
+                  "val": "\"Aerospace\"",
+                  "offset": 128
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_enter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996500,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user validate \"Zachs\", \"www.zach.com\", \"kumar@gmail.com\", \"2226664455\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zachs\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"www.zach.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"kumar@gmail.com\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"2226664455\"",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-22T02:50:51.708Z",
+        "line": 14,
+        "name": "Second Test Case",
+        "description": "",
+        "id": "add-new-user;second-test-case;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@type\u003d\u0027submit\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSI\u0027, ip: \u002710.50.1.213\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\12242\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 8dab250a7abf73e4775736b2636f8871\n*** Element info: {Using\u003dxpath, value\u003d//button[@type\u003d\u0027submit\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.submit(Unknown Source)\r\n\tat StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite(EspoCrm.java:35)\r\n\tat ✽.the user goes to the WebSite(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:4)\r\n",
+              "duration": 10336588400,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "the user goes to the WebSite",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 436065800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user open the Accounts",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_open_the_Accounts()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks the Create Account button",
+            "match": {
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_clicks_the_Create_Account_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter \"Kumars\", \"www.kumar.com\", \"kumar@gmail.com\", \"993366788\", \"Wing\", \"Zlach\", \"LA\",\"66858\", \"Los Angeles\", \"Reseller\", \"Architecture\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kumars\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"www.kumar.com\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"kumar@gmail.com\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"993366788\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"Wing\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"Zlach\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"LA\"",
+                  "offset": 91
+                },
+                {
+                  "val": "\"66858\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"Los Angeles\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"Reseller\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"Architecture\"",
+                  "offset": 132
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_enter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user validate \"Kumars\", \"www.kumar.com\", \"kumar@gmail.com\", \"993366788\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kumars\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"www.kumar.com\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"kumar@gmail.com\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"993366788\"",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefinitions.com.EspoCRM.Case2.the_user_validate(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "StepDefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Add new user",
+    "description": "",
+    "id": "add-new-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com.EspoCRM/EspoCRMcase2.feature",
+    "tags": []
+  }
+]

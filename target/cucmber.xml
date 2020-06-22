@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="29.639">
+    <testcase classname="Add new user" name="Second Test Case" time="18.018">
+        <failure message="expected:&lt;[Davids]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given the user goes to the WebSite..........................................passed
+When the user open the Accounts.............................................passed
+Then the user clicks the Create Account button..............................passed
+And the user enter "Davids", "www.davud.com", "davud@gmail.com", "2226667788", "Mount", "Prospect", "IL","66678", "Chicago", "Customer", "Advertising".passed
+And the user validate "Davids", "www.davud.com", "davud@gmail.com", "2226667788".failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Davids]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.com.EspoCRM.Case2.the_user_validate(Case2.java:72)
+	at ✽.the user validate "Davids", "www.davud.com", "davud@gmail.com", "2226667788"(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Add new user" name="Second Test Case 2" time="0.517">
+        <failure message="unexpected alert open: {Alert text : }&#10;  (Session info: chrome=83.0.4103.106): {Alert text : &#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '10.50.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\12242\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8dab250a7abf73e4775736b2636f8871&#10;*** Element info: {Using=xpath, value=//button[@type='submit']}" type="org.openqa.selenium.UnhandledAlertException">
+            <![CDATA[Given the user goes to the WebSite..........................................failed
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
+And the user enter "Zachs", "www.zach.com", "kumar@gmail.com", "2226664455", "Des", "Plaines", "IL","99978", "New York", "Partner", "Aerospace".skipped
+And the user validate "Zachs", "www.zach.com", "kumar@gmail.com", "2226664455".skipped
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=83.0.4103.106): {Alert text : 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '10.50.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\12242\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8dab250a7abf73e4775736b2636f8871
+*** Element info: {Using=xpath, value=//button[@type='submit']}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.submit(Unknown Source)
+	at StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite(EspoCrm.java:35)
+	at ✽.the user goes to the WebSite(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:4)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Add new user" name="Second Test Case 3" time="10.783">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@type='submit']&quot;}&#10;  (Session info: chrome=83.0.4103.106)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MSI', ip: '10.50.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\12242\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8dab250a7abf73e4775736b2636f8871&#10;*** Element info: {Using=xpath, value=//button[@type='submit']}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given the user goes to the WebSite..........................................failed
+When the user open the Accounts.............................................skipped
+Then the user clicks the Create Account button..............................skipped
+And the user enter "Kumars", "www.kumar.com", "kumar@gmail.com", "993366788", "Wing", "Zlach", "LA","66858", "Los Angeles", "Reseller", "Architecture".skipped
+And the user validate "Kumars", "www.kumar.com", "kumar@gmail.com", "993366788".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '10.50.1.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\12242\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8dab250a7abf73e4775736b2636f8871
+*** Element info: {Using=xpath, value=//button[@type='submit']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.submit(Unknown Source)
+	at StepDefinitions.com.EspoCRM.EspoCrm.the_user_goes_to_the_WebSite(EspoCrm.java:35)
+	at ✽.the user goes to the WebSite(file:///C:/Users/12242/IdeaProjects/Homework11June16/src/test/resources/com.EspoCRM/EspoCRMcase2.feature:4)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
